@@ -1,14 +1,15 @@
 package main
 
-import "fmt"
-
-func sum(a int, b int) bool {
-	if a - b < 0 {
-		return false
+func compareAndSum(a int, b int) bool {
+	if a > b {
+		if a + b > 10 {
+			return false
+		} else {
+			return true
+		}
 	}
-	return true
+	return false
 }
 
 func main() {
-	fmt.Printf("Sum %v", sum(2, 3))
 }
